@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Activities Module: afr_g5_adverbs_act_3
+ */
+
+/**
+ * Implements hook_activities_info().
+ *
+ * Specify token information for this activity.
+ */
+function afr_g5_adverbs_act_3_activities_info() {
+  $activities_info['afr_g5_adverbs_act_3'] = array(
+    'name'        => t('Using Adverbs in a Sentence'),
+    'description' => t('Activity 3'),
+  );
+  return $activities_info;
+}
+
+/**
+ * Implements hook_activities().
+ */
+function afr_g5_adverbs_act_3_activities() {
+
+  $path    = drupal_get_path('module', 'afr_g5_adverbs_act_3');
+  $content = $path . '/content/index.html';
+
+  $iframe  = '';
+  $iframe .= '<iframe';
+  $iframe .= ' width="634px"';
+  $iframe .= ' height="919px"';
+  $iframe .= ' frameborder="0"';
+  $iframe .= ' scrolling="no"';
+  $iframe .= ' src="/' . $content . '">';
+  $iframe .= '</iframe>';
+
+  $edit_element = array(
+    '#theme'       => 'fieldset',
+    '#title'       => t('Using Adverbs in a Sentence'),
+    '#children'    => $iframe,
+    '#collapsible' => FALSE,
+    '#collapsed'   => FALSE,
+    '#attached'    => array('js' => array('misc/form.js', 'misc/collapse.js')),
+  );
+  $fieldset = drupal_render($edit_element);
+
+  return $fieldset;
+}

@@ -1,0 +1,8 @@
+name        = "Afrikaans Grade 5 - Language Use: Gender - Activity 1: Word Search - Gender"
+description = "Afrikaans Grade 5 - Language Use: Gender - Activity 1: Word Search - Gender"
+core        = 7.x
+package     = MyCyberwall Activities
+version     = 7.x-1.0
+project     = afr_g5_gender_word_search_act_1
+
+; Module Author: Wiseman Ndlela

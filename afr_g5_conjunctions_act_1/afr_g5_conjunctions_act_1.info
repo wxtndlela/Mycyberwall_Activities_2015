@@ -1,0 +1,8 @@
+name        = "Afrikaans Grade 5 - Language Use: Conjunctions - Activity 1: Conjunction Groups"
+description = "Afrikaans Grade 5 - Language Use: Conjunctions - Activity 1: Conjunction Groups"
+core        = 7.x
+package     = MyCyberwall Activities
+version     = 7.x-1.0
+project     = afr_g5_conjunctions_act_1
+
+; Module Author: Wiseman Ndlela

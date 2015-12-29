@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Activities Module: afr_g5_gender_word_search_act_1
+ */
+
+/**
+ * Implements hook_activities_info().
+ *
+ * Specify token information for this activity.
+ */
+function afr_g5_gender_word_search_act_1_activities_info() {
+  $activities_info['afr_g5_gender_word_search_act_1'] = array(
+    'name'        => t('Word Search - Gender'),
+    'description' => t('Activity 1'),
+  );
+  return $activities_info;
+}
+
+/**
+ * Implements hook_activities().
+ */
+function afr_g5_gender_word_search_act_1_activities() {
+
+  $path    = drupal_get_path('module', 'afr_g5_gender_word_search_act_1');
+  $content = $path . '/content/index.html';
+
+  $iframe  = '';
+  $iframe .= '<iframe';
+  $iframe .= ' width="634px"';
+  $iframe .= ' height="1437px"';
+  $iframe .= ' frameborder="0"';
+  $iframe .= ' scrolling="no"';
+  $iframe .= ' src="/' . $content . '">';
+  $iframe .= '</iframe>';
+
+  $edit_element = array(
+    '#theme'       => 'fieldset',
+    '#title'       => t('Word Search - Gender'),
+    '#children'    => $iframe,
+    '#collapsible' => FALSE,
+    '#collapsed'   => FALSE,
+    '#attached'    => array('js' => array('misc/form.js', 'misc/collapse.js')),
+  );
+  $fieldset = drupal_render($edit_element);
+
+  return $fieldset;
+}

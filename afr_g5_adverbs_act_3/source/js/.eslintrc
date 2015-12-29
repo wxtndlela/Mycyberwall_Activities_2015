@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "$": true,
+    "domready": true
+  },
+  "rules": {
+    "eqeqeq": [2, "smart"],
+    "guard-for-in": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-trailing-spaces": 2,
+    "no-undef": 2,
+    "no-unused-vars": [2, {"vars": "local", "args": "none"}],
+    "strict": 2,
+    "new-cap": 0,
+    "quotes": [2, "single", "avoid-escape"],
+    "camelcase": 0,
+    "no-underscore-dangle": 0,
+    "no-new": 0,
+    "no-alert": 0,
+    "no-use-before-define": 2,
+    "consistent-return": 0,
+    "no-constant-condition": 0
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"name":        "myc-activity",
+	"description": "My Cyberwall Activity",
+	"private":     true,
+	"version":     "0.0.0",
+	"main":        "gulpfile.js",
+	"author": {
+		"name":        "Riaan Burger",
+		"email":       "riaan.burger@burtronix.com",
+		"url":         "http://burtronix.com"
+	},
+	"engines": {
+		"node":        ">=0.10"
+	},
+	"scripts": {
+		"test":        "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"browser-sync":      "^1.8.3",
+		"del":               "^1.1.1",
+		"gulp":              "^3.8.10",
+		"gulp-compass":      "^2.0.3",
+		"gulp-concat":       "^2.4.3",
+		"gulp-eslint":       "^0.2.0",
+		"gulp-if":           "^1.2.5",
+		"gulp-imagemin":     "^2.1.0",
+		"gulp-ignore":       "^1.2.1",
+		"gulp-jshint":       "^1.9.0",
+		"gulp-minify-css":   "^0.3.11",
+		"gulp-minify-html":  "^0.1.8",
+		"gulp-uglify":       "^1.0.2",
+		"jshint-stylish":    "^1.0.0",
+		"mkdirp":            "^0.5.0"
+	}
+}

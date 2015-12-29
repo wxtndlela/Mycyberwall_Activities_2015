@@ -1,0 +1,8 @@
+name        = "Afrikaans Grade 5 - Language Use: Adjectives - Activity 1: Filling in Adjectives"
+description = "Afrikaans Grade 5 - Language Use: Adjectives - Activity 1: Filling in Adjectives"
+core        = 7.x
+package     = MyCyberwall Activities
+version     = 7.x-1.0
+project     = afr_g5_adjectives_filling_in_act_1
+
+; Module Author: Wiseman Ndlela

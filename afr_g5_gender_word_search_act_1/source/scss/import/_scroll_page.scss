@@ -1,0 +1,16 @@
+#up-down {
+  width: 50px; height: 88px;
+  position: fixed; top: 10px; right: 10px;
+  #up, #down {
+    position: absolute; left: 0;
+    width: 50px; height: 44px;
+  }
+  #up {
+    top: 0px;
+    background: url('../include/images/up-down.png') top left;
+  }
+  #down {
+    top: 44px;
+    background: url('../include/images/up-down.png') bottom left;
+  }
+}
